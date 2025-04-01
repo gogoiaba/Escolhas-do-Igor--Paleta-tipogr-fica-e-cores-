@@ -1,0 +1,13 @@
+:root {
+  --chumbo: #2f3840;
+  --mostarda: #f2c438;
+  --encarnado: #d93b3b;
+  --gelo: #f2f2f2;
+  --noir: #0d0d0d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
