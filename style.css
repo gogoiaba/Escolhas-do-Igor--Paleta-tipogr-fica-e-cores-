@@ -24,11 +24,14 @@ body {
     #e0efff 100%
   );
   background: linear-gradient(to bottom, #e0efff 0%, #f2f2f2 50%, #e0efff 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1 {
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-family: Quicksand, sans-serif;
   color: var(--encarnado);
   text-align: center;
@@ -37,7 +40,7 @@ h1 {
 
 h2 {
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: Poppins, sans-serif;
   color: var(--noir);
   padding: 0 0 1rem 0;
@@ -46,7 +49,7 @@ h2 {
 
 h3 {
   font-weight: 400;
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   font-family: Poppins, sans-serif;
   color: var(--noir);
   padding: 1rem;
@@ -54,7 +57,7 @@ h3 {
 
 p {
   font-weight: 400;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   font-family: Merriweather, serif;
   color: var(--chumbo);
 }
@@ -63,6 +66,7 @@ p {
   background-color: rgba(242, 242, 242, 0.6);
   margin: 2rem;
   padding: 2rem;
+  min-width: 52rem;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
@@ -73,7 +77,8 @@ p {
   overflow: visible;
 }
 
-.palette {
+.palette,
+.typeface {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
@@ -111,11 +116,14 @@ li {
   color: var(--gelo);
 }
 
+.palette-card h3 {
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+
 .palette-card {
-  height: 12.5rem;
-  max-width: 40rem;
-  min-width: 25rem;
-  width: 30%;
+  min-height: 12.5rem;
+  min-width: 30rem;
   margin: 1rem;
   display: flex;
   flex-direction: column;
@@ -126,4 +134,66 @@ li {
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
   flex-grow: 0;
   flex-shrink: 0;
+}
+
+.palette-card p,
+.font-card p {
+  margin: 1rem 2rem;
+}
+
+.font-card {
+  min-height: 20rem;
+  min-width: 50rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.font-card h3 {
+  color: var(--encarnado);
+}
+
+.quicksand h3,
+.quicksand p {
+  font-family: Quicksand, sans-serif;
+}
+
+.poppins h3,
+.poppins p {
+  font-family: Poppins, sans-serif;
+}
+
+.merriweather h3,
+.merriweather p {
+  font-family: Merriweather, serif;
+}
+
+.font-card h3 {
+  font-size: 2.5rem;
+  padding: 1rem;
+}
+
+.font-card p {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.mustard {
+  color: var(--mostarda);
+  background-color: var(--chumbo);
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.italic {
+  font-style: italic;
 }
