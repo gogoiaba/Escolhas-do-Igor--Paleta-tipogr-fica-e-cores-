@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap");
+
 :root {
   --chumbo: #2f3840;
   --mostarda: #f2c438;
@@ -10,4 +12,118 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background: #e0efff;
+  background: -moz-linear-gradient(top, #e0efff 0%, #f2f2f2 50%, #e0efff 100%);
+  background: -webkit-linear-gradient(
+    top,
+    #e0efff 0%,
+    #f2f2f2 50%,
+    #e0efff 100%
+  );
+  background: linear-gradient(to bottom, #e0efff 0%, #f2f2f2 50%, #e0efff 100%);
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  font-family: Quicksand, sans-serif;
+  color: var(--encarnado);
+  text-align: center;
+  padding: 1.8rem 0 1rem 0;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-family: Poppins, sans-serif;
+  color: var(--noir);
+  padding: 0 0 1rem 0;
+  text-align: center;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1.125rem;
+  font-family: Poppins, sans-serif;
+  color: var(--noir);
+  padding: 1rem;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.125rem;
+  font-family: Merriweather, serif;
+  color: var(--chumbo);
+}
+
+.container {
+  background-color: rgba(242, 242, 242, 0.6);
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container.cores {
+  overflow: visible;
+}
+
+.palette {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  justify-content: center;
+}
+
+li {
+  list-style: none;
+}
+
+.chumbo {
+  background-color: var(--chumbo);
+}
+
+.mostarda {
+  background-color: var(--mostarda);
+}
+
+.encarnado {
+  background-color: var(--encarnado);
+}
+
+.gelo {
+  background-color: var(--gelo);
+}
+
+.noir {
+  background-color: var(--noir);
+}
+
+.chumbo *,
+.encarnado *,
+.noir * {
+  color: var(--gelo);
+}
+
+.palette-card {
+  height: 12.5rem;
+  max-width: 40rem;
+  min-width: 25rem;
+  width: 30%;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  flex-grow: 0;
+  flex-shrink: 0;
 }
