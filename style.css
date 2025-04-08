@@ -78,7 +78,8 @@ p {
 }
 
 .palette,
-.typeface {
+.typeface,
+.stylecard {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
@@ -123,7 +124,7 @@ li {
 
 .palette-card {
   min-height: 12.5rem;
-  min-width: 30rem;
+  min-width: 20rem;
   margin: 1rem;
   display: flex;
   flex-direction: column;
@@ -143,7 +144,7 @@ li {
 
 .font-card {
   min-height: 20rem;
-  min-width: 50rem;
+  min-width: 10rem;
   margin: 1rem;
   display: flex;
   flex-direction: column;
@@ -196,4 +197,80 @@ li {
 
 .italic {
   font-style: italic;
+}
+
+.fontstyle-card {
+  min-height: 18rem;
+  min-width: 30rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.h1-like {
+  font-weight: 700;
+  font-size: 3.5rem;
+  font-family: Quicksand, sans-serif;
+  color: var(--encarnado);
+}
+
+.h2-like {
+  font-weight: 600;
+  font-size: 2rem;
+  font-family: Poppins, sans-serif;
+  color: var(--noir);
+}
+
+.p-like {
+  font-weight: 400;
+  font-size: 1.25rem;
+  font-family: Merriweather, serif;
+}
+
+.quotation-like {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 1.25rem;
+  font-family: Merriweather, serif;
+}
+
+.button-like {
+  font-weight: 600;
+  font-size: 1.125rem;
+  font-family: Poppins, sans-serif;
+  background-color: var(--mostarda);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  border: none;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.button-like:hover {
+  background-color: #f2d128;
+  transition: all 0.1s ease-in-out;
+}
+
+.button-like:active {
+  position: relative;
+  top: 3px;
+  box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.3);
+  transition: all 0.1s ease-in-out;
+}
+
+.subtitle-like {
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: Poppins, sans-serif;
+  border: solid 1px var(--chumbo);
+  padding: 0.5rem;
+  background-color: var(--gelo);
 }
